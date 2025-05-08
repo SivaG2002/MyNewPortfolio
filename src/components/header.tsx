@@ -43,7 +43,6 @@ export default function Header() {
       <div className="container mx-auto px-4 h-20 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 text-2xl font-bold text-foreground hover:text-primary transition-colors" aria-label="Monochrome Folio Home">
           <Code2 className="h-8 w-8" />
-          <span>MonochromeFolio</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -87,3 +86,4 @@ export default function Header() {
     </header>
   );
 }
+
