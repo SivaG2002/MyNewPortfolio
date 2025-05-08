@@ -65,19 +65,19 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div className="flex items-center text-foreground">
                 <Mail className="w-5 h-5 mr-3 text-primary" />
-                <a href="mailto:siva.g.nair@example.com" className="hover:text-primary transition-colors">
-                  siva.g.nair@example.com
+                <a href="mailto:sivagnairofficial@gmail.com" className="hover:text-primary transition-colors">
+                sivagnairofficial@gmail.com
                 </a>
               </div>
               <div className="flex items-center text-foreground">
                 <Phone className="w-5 h-5 mr-3 text-primary" />
                 <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                  +91 6282684814
                 </a>
               </div>
               <div className="flex items-center text-foreground">
                 <MapPin className="w-5 h-5 mr-3 text-primary" />
-                <span>Your City, Your Country</span>
+                <span>Kochi, Kerala, India</span>
               </div>
             </div>
           </div>

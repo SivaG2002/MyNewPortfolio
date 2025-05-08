@@ -15,20 +15,20 @@ interface EducationEntry {
 const educationData: EducationEntry[] = [
   {
     id: "1",
-    institution: "University of Advanced Technology",
-    degree: "Master of Science",
+    institution: "Sree Buddha College Of Engineering,Pattoor",
+    degree: "B-Tech In Artificial Intelligence And Machine Learning",
     fieldOfStudy: "Artificial Intelligence",
-    period: "2020 - 2022",
-    location: "Tech City, TC",
+    period: "2020 - 2024",
+    location: "Pattoor, Pathanamthitta",
     description: "Focused on machine learning, neural networks, and natural language processing. Thesis on generative adversarial networks for image synthesis.",
   },
   {
     id: "2",
-    institution: "State College of Engineering",
-    degree: "Bachelor of Engineering",
+    institution: "Sree Buddha Central School",
+    degree: "Higher Secondary",
     fieldOfStudy: "Computer Science",
-    period: "2016 - 2020",
-    location: "Capital City, CC",
+    period: "2018 - 2020",
+    location: "Karunagappally,Kollam",
     description: "Core curriculum in data structures, algorithms, software engineering, and database management. Capstone project on a web-based collaborative platform.",
   },
 ];
