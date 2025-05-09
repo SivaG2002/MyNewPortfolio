@@ -49,6 +49,26 @@ const projectsData: Project[] = [
     tags: ["React Native", "Firebase", "iOS", "Android"],
     sourceLink: "#",
   },
+  {
+    id: "4",
+    title: "Data Visualization Dashboard",
+    description:
+      "An interactive dashboard for visualizing complex datasets, providing insights through charts, graphs, and dynamic filtering.",
+    imageUrl: "https://picsum.photos/seed/project4/600/400",
+    tags: ["D3.js", "React", "Node.js", "PostgreSQL"],
+    liveLink: "#",
+    sourceLink: "#",
+  },
+  {
+    id: "5",
+    title: "Real-time Collaboration Tool",
+    description:
+      "A web-based application enabling real-time collaboration among multiple users on documents or projects with synchronized updates.",
+    imageUrl: "https://picsum.photos/seed/project5/600/400",
+    tags: ["WebSocket", "Express.js", "React", "Redis"],
+    liveLink: "#",
+    sourceLink: "#",
+  },
 ];
 
 export default function ProjectsPage() {
