@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Users, Zap } from "lucide-react";
@@ -13,7 +12,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
           <div className="md:col-span-1 flex justify-center">
             <Image
-              src="https://picsum.photos/seed/siva/400/400"
+              src="/assets/pro.png"
               alt="Siva G Nair - Professional Headshot"
               width={300}
               height={300}

@@ -15,7 +15,7 @@ export default function Footer() {
           <Link href="https://linkedin.com/in/sivagnair" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://twitter.com/sivagnair" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <Link href="https://x.com/docemnm" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
         </div>
