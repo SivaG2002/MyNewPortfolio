@@ -9,6 +9,7 @@ import { Menu, Code2 } from "lucide-react"; // Using Code2 for logo
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+ { href: "/experience", label: "Experience" },
   { href: "/projects", label: "Projects" },
   { href: "/education", label: "Education" },
   { href: "/contact", label: "Contact" },

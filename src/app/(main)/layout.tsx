@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <Header />
+      <Header navigation={[ {href:'/', label: 'Home'}, {href:'/projects', label: 'Projects'}, {href:'/experience', label: 'Experience'}, {href:'/education', label: 'Education'}, {href:'/about', label: 'About'}, {href:'/contact', label: 'Contact'}, ]} />
       <main className="flex-grow container mx-auto px-4 py-8">
         {children}
       </main>
