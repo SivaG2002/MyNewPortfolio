@@ -12,10 +12,10 @@ export default function Footer() {
           <Link href="https://github.com/sivagnair" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://linkedin.com/in/sivagnair" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <Link href="https://linkedin.com/in/SivaG2002" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://twitter.com/sivagnair" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <Link href="https://x.com/docemnm" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
         </div>
