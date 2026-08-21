@@ -1,0 +1,279 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%; /* Dark background: #121212 */
+    --foreground: 0 0% 98%; /* White text */
+
+    --card: 240 6% 10%; /* Slightly lighter dark for cards */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 6% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 70% 60%; /* Purple accent */
+    --primary-foreground: 0 0% 98%; /* White text on primary */
+
+    --secondary: 240 4% 15%; /* Darker gray for secondary elements */
+    --secondary-foreground: 0 0% 80%; /* Lighter gray text */
+
+    --muted: 240 4% 25%; /* Muted gray */
+    --muted-foreground: 0 0% 60%; /* Muted gray text */
+
+    --accent: 270 70% 60%; /* Purple accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 20%; /* Darker border */
+    --input: 240 4% 18%; /* Dark input background */
+    --ring: 270 70% 70%; /* Lighter purple for ring */
+
+    --radius: 0.5rem;
+
+    /* Chart colors (using shades of gray and purple) */
+    --chart-1: 270 60% 50%; /* Purple */
+    --chart-2: 0 0% 70%;   /* Light Gray */
+    --chart-3: 270 40% 40%; /* Darker Purple */
+    --chart-4: 0 0% 50%;   /* Medium Gray */
+    --chart-5: 270 70% 80%; /* Lighter Purple */
+
+    --sidebar-background: 240 8% 6%; /* Even darker for sidebar */
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 270 70% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 5% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 4% 15%;
+    --sidebar-ring: 270 70% 70%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 6% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 6% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 70% 60%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 240 4% 25%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 20%;
+    --input: 240 4% 18%;
+    --ring: 270 70% 70%;
+    
+    --chart-1: 270 60% 50%;
+    --chart-2: 0 0% 70%;
+    --chart-3: 270 40% 40%;
+    --chart-4: 0 0% 50%;
+    --chart-5: 270 70% 80%;
+
+    --sidebar-background: 240 8% 6%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 270 70% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 5% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 4% 15%;
+    --sidebar-ring: 270 70% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Subtle fade-in for content loading */
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar for a more modern look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
+
+/* Dripping effect animation */
+@keyframes drip {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--primary)), 
+                0 0 0 0 hsl(var(--primary));
+  }
+  50% {
+    box-shadow: 0 0 10px 4px hsl(var(--primary)), 
+                0 12px 8px -6px hsl(var(--primary));
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--primary)), 
+                0 0 0 0 hsl(var(--primary));
+  }
+}
+
+.drip-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.drip-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  background: hsl(var(--primary));
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.drip-button:hover {
+  animation: drip 0.6s ease-in-out;
+}
+
+.drip-button:hover::after {
+  animation: dripDrop 0.6s ease-in-out;
+}
+
+@keyframes dripDrop {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    bottom: -2px;
+  }
+  50% {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+  }
+  100% {
+    width: 4px;
+    height: 12px;
+    opacity: 0;
+    bottom: -15px;
+  }
+}
+
+/* Ripple effect animation */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ripple-button:active::before {
+  animation: ripple 0.6s ease-out;
+}
+
+/* Continuous ripple effect for navbar */
+@keyframes continuousRipple {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 -2px 15px rgba(168, 85, 247, 0.3), 0 -2px 8px rgba(168, 85, 247, 0.5);
+  }
+  50% {
+    box-shadow: 0 -2px 25px rgba(168, 85, 247, 0.6), 0 -2px 15px rgba(168, 85, 247, 0.8);
+  }
+}
+
+.navbar-ripple {
+  position: relative;
+  overflow: visible;
+}
+
+.navbar-ripple::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary)) 50%, transparent);
+  pointer-events: none;
+}
