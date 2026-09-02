@@ -17,7 +17,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Siva G Nair',
-  description: 'Portfolio of Siva G Nair - AI Developer, Web Developer, Gamer',
+  description: 'Siva G Nair is an AI Engineer and Computer Science graduate specializing in Artificial Intelligence, Machine Learning, and software development.',
+   verification: {
+    google: 'ZIpCujPLKV5mx5AjtmiGgDVQJwzQtfSMqLtS1mnM8FU',},
 };
 
 export default function RootLayout({
