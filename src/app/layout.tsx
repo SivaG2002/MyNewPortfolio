@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Monochrome Folio - Siva G Nair',
+  title: 'Siva G Nair',
   description: 'Portfolio of Siva G Nair - AI Developer, Web Developer, Gamer',
 };
 
