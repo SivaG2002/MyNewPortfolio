@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   description: 'Siva G Nair is an AI Engineer and Computer Science graduate specializing in Artificial Intelligence, Machine Learning, and software development.',
    verification: {
     google: 'ZIpCujPLKV5mx5AjtmiGgDVQJwzQtfSMqLtS1mnM8FU',},
+  alternates: {
+  canonical: 'https://sivagnair.vercel.app/home',
+},  
 };
 
 export default function RootLayout({
