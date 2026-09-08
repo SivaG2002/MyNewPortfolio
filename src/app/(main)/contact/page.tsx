@@ -63,20 +63,22 @@ export default function ContactPage() {
               Feel free to reach out via email, phone, or by filling out the contact form. I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center text-foreground">
-                <Mail className="w-5 h-5 mr-3 text-primary" />
-                <a href="mailto:sivagnairofficial@gmail.com" className="hover:text-primary transition-colors">
-                sivagnairofficial@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center text-foreground">
-              
-              <div className="flex items-center text-foreground">
-                <MapPin className="w-5 h-5 mr-3 text-primary" />
-                <span>Kochi, Kerala, India</span>
-              </div>
-            </div>
-          </div>
+  <div className="flex items-center text-foreground">
+    <Mail className="w-5 h-5 mr-3 text-primary" />
+    <a
+      href="mailto:sivagnairofficial@gmail.com"
+      className="hover:text-primary transition-colors"
+    >
+      sivagnairofficial@gmail.com
+    </a>
+  </div>
+
+  <div className="flex items-center text-foreground">
+    <MapPin className="w-5 h-5 mr-3 text-primary" />
+    <span>Kochi, Kerala, India</span>
+  </div>
+</div>
+          
           <Card className="bg-card text-card-foreground shadow-lg">
             <CardHeader>
               <CardTitle className="text-2xl font-semibold text-foreground">Send a Message</CardTitle>
