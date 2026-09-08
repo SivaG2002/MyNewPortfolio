@@ -78,6 +78,7 @@ export default function ContactPage() {
     <span>Kochi, Kerala, India</span>
   </div>
 </div>
+            </div>
           
           <Card className="bg-card text-card-foreground shadow-lg">
             <CardHeader>
