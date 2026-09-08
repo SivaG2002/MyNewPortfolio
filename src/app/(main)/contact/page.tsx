@@ -70,11 +70,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="flex items-center text-foreground">
-                <Phone className="w-5 h-5 mr-3 text-primary" />
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  +91 6282684814
-                </a>
-              </div>
+              
               <div className="flex items-center text-foreground">
                 <MapPin className="w-5 h-5 mr-3 text-primary" />
                 <span>Kochi, Kerala, India</span>
